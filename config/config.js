@@ -1,7 +1,7 @@
 const fs = require('fs'); // Import the filesystem module
 
 module.exports = {
-  "development1": {
+  "development": {
     "username": "avnadmin",
     "password": "AVNS_lRuj2Ne-KwJhe3k5Sfq",
     "database": "defaultdb",
@@ -31,7 +31,7 @@ module.exports = {
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
-  "development": {
+  "development1": {
     "username": "postgres",
     "password": "root",
     "database": "product",
