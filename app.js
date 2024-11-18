@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swagger.swaggerSpec));
 
 
-const filePath = path.join(`${process.cwd()}`,`public`,`upload`,`candidateReport`);
+const filePath = path.join(`${process.cwd()}`,`public`,`upload`);
 if (!fs.existsSync(filePath)) {
   fs.mkdirSync(filePath, { recursive: true });
 }

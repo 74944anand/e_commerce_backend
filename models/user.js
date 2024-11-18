@@ -44,6 +44,7 @@ module.exports = (sequelize, DataTypes) => {
       user.hasOne(models.userToken, { as: "userToken", foreignKey: 'userId' });
       user.hasMany(models.category, { foreignKey: 'userId', as: 'userCategories' });
       user.hasMany(models.product, { foreignKey: 'userId', as: 'userProducts' });
+      user.hasMany(models.upload, { foreignKey: 'uploadedBy', as: 'userUploads' })
     };
 
   // This hook is always run before create.

@@ -1,11 +1,7 @@
 const db = require("../models");
 const pagination = require("../utils/pagination");
 const Op = db.Sequelize.Op;
-const sequelize = db.sequelize;
-const { QueryTypes, where } = require("sequelize");
-const bcrypt = require("bcrypt");
 const { USER_ROLE } = require("../utils/enum");
-const result = require("underscore/cjs/result.js");
 
 exports.getData = async (query) => {
   const { search, offset, pageSize } = pagination.paginationWithFromTo(
